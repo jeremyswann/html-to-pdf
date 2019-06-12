@@ -29,7 +29,7 @@ package:
     - /*.zip
 
 functions:
-  apiToHtml:
+  htmlToPdf:
     handler: index.handler
     events:
       - http:
