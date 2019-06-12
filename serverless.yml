@@ -3,7 +3,7 @@ service: html-to-pdf
 
 provider:
   name: aws
-  runtime: nodejs4.3
+  runtime: nodejs8.10
   region: ap-southeast-2
 
 package:
@@ -12,8 +12,12 @@ package:
     - index.js
     - wkhtmltopdf
   exclude:
+    - .git/**
     - .gitignore
-    - .git
+    - .DS_Store
+    - npm-debug.log
+    - .serverless/**
+    - .serverless_plugins/**
     - LICENSE
     - README.md
     - /*.zip
