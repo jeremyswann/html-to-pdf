@@ -1,5 +1,7 @@
 # Welcome to Serverless!
 service: html-to-pdf
+tenant: jeremyswann
+app: html-to-pdf
 
 provider:
   name: aws
