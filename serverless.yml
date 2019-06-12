@@ -11,6 +11,7 @@ provider:
   timeout: 10
   tracing:
     lambda: true
+  stage: beta
 
 package:
   include:
@@ -30,7 +31,7 @@ package:
 
 functions:
   htmlToPdf:
-    handler: index.handler
+    handler: handler
     events:
       - http:
           path: /htmlToPdf
